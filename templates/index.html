@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Value Stories for Kids</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="card">
+    <h1>Value Stories for Kids</h1>
+    <p class="tagline">
+      A gentle bedtime story that teaches your child a good value.
+    </p>
+
+    <form method="POST" class="story-form">
+      <label for="name">Child's first name (optional)</label>
+      <input type="text" id="name" name="name" value="{{ form.name }}"
+             placeholder="Leave blank for a surprise hero" maxlength="30">
+
+      <label for="age">Child's age</label>
+      <input type="number" id="age" name="age" value="{{ form.age }}"
+             min="1" max="14" required>
+
+      <label for="value">Value to teach</label>
+      <select id="value" name="value" required>
+        <option value="" disabled {{ '' if form.value else 'selected' }}>
+          Choose a value
+        </option>
+        {% for v, meaning in values.items() %}
+        <option value="{{ v }}" {{ 'selected' if form.value == v else '' }}>
+          {{ v|capitalize }} - {{ meaning }}
+        </option>
+        {% endfor %}
+      </select>
+
+      <button type="submit">Tell me a story</button>
+    </form>
+
+    <p class="limit">Free stories left today: {{ stories_left }}</p>
+
+    {% if error %}
+    <div class="message error">{{ error }}</div>
+    {% endif %}
+
+    {% if story %}
+    <article class="story">
+      {% for paragraph in story.split('\n') %}
+        {% if paragraph.strip() %}<p>{{ paragraph }}</p>{% endif %}
+      {% endfor %}
+    </article>
+    {% endif %}
+  </main>
+</body>
+</html>

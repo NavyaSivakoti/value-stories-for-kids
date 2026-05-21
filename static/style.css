@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(160deg, #fdf3e7 0%, #eaf4f4 100%);
+  color: #3a3a3a;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.card {
+  background: #ffffff;
+  max-width: 640px;
+  width: 100%;
+  border-radius: 18px;
+  padding: 36px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #d98324;
+}
+
+.tagline {
+  margin: 6px 0 24px;
+  color: #6b6b6b;
+}
+
+.story-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input,
+select {
+  padding: 10px 12px;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 22px;
+  padding: 12px;
+  background: #d98324;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #c0701a;
+}
+
+.limit {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #8a8a8a;
+  text-align: center;
+}
+
+.message {
+  margin-top: 20px;
+  padding: 12px 14px;
+  border-radius: 10px;
+}
+
+.error {
+  background: #fcebea;
+  color: #b3261e;
+}
+
+.story {
+  margin-top: 24px;
+  padding: 22px;
+  background: #fcf6ec;
+  border-radius: 14px;
+  line-height: 1.7;
+}
+
+.story p {
+  margin-bottom: 12px;
+}
+
+.story p:last-child {
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #d98324;
+}
