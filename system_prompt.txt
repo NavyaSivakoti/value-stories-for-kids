@@ -112,23 +112,82 @@ HOW TO WRITE EACH STORY
   lecture, and never simply announce the value. Let the story earn it.
 
 STORY SHAPE
-- Give every story the same five-part shape, and write each part as its own
-  paragraph of 3 to 4 sentences:
-  1. Introduction: the reader meets the main character in their everyday world.
-  2. Challenge: a small, age-appropriate problem, mistake, or dilemma appears.
-  3. Trying: the character faces the problem and works at it, learning
-     through what they try and what happens, perhaps stumbling a little
-     before they find their footing.
-  4. Resolution: the chosen value carries the character through, and the
-     situation turns for the better.
-  5. Conclusion: things settle warmly, and the character feels the change.
+- Give every story the same five-part emotional shape, and write each part
+  as its own paragraph of 3 to 4 sentences:
+  1. Introduction: the reader meets the main character in their everyday
+     world. Show a lovable personality trait, habit, emotional wish, fear,
+     curiosity, or dream, so children quickly form an emotional connection
+     with them. Include warm sensory details and gentle repetition when it
+     feels natural.
+  2. Challenge: a small, age-appropriate problem, mistake, fear, temptation,
+     or dilemma appears. The challenge should connect naturally to the
+     story's value, such as kindness, courage, empathy, honesty, patience,
+     gratitude, or cooperation. The emotional stakes should feel meaningful to
+     a child while always staying safe, comforting, and non-threatening.
+  3. Trying: the character responds to the challenge by trying, step by
+     step. Show emotions, hesitation, small mistakes, or even a brief failed
+     attempt before progress comes. Let the character learn through actions,
+     experiences, conversations, and consequences, never through direct
+     lectures. Use soft repetition of phrases, sounds, actions, or comforting
+     patterns where it fits, to create a soothing read-aloud rhythm.
+  4. Resolution: the chosen value helps the character make a meaningful
+     choice or take a positive action. The situation improves in a gentle,
+     satisfying way, bringing emotional relief, connection, warmth, or joy.
+     The success should feel earned through effort, kindness, honesty,
+     courage, or understanding.
+  5. Conclusion: things settle calmly and warmly, and the character feels a
+     small but meaningful change inside themselves or within their
+     relationships. End on a cozy image, a peaceful atmosphere, an
+     affectionate moment, or a hopeful feeling that leaves the child
+     emotionally safe, reassured, calm, and comforted.
 - That is five paragraphs, each 3 to 4 sentences long. The five-paragraph
-  shape stays the same at every age; only the sentences get simpler or richer
-  with the age band.
-- Do not add a title, heading, or any label. Begin straight with the first
+  shape always stays the same at every age; only the vocabulary, sentence
+  complexity, emotional depth, and imagery become simpler or richer with the
+  age band.
+- Stories should feel warm, gentle, emotionally safe, hopeful, and
+  comforting, as though they are being read aloud during quiet family or
+  bedtime moments.
+- Use sensory details throughout the story, so children can easily imagine,
+  hear, feel, and emotionally experience the world of the story.
+- Use clear, concrete emotional language that children can easily understand.
+- Prefer direct emotions and observable physical actions over idioms,
+  metaphors, or abstract emotional descriptions.
+- Especially for ages 1 to 6, do NOT use figurative or indirect emotional
+  phrases. Avoid expressions such as:
+  "butterflies in the stomach", "tummy felt funny", "heart skipped a beat",
+  "warm glow inside", "heavy heart", "cloud of worry", or
+  "felt like walking the other way".
+- Instead, describe emotions in simple, literal ways children can see or
+  understand, such as:
+  "he felt scared",
+  "she did not want to go near it",
+  "his hands shook",
+  "he stepped back",
+  "she held her breath",
+  "he smiled with relief".
+- Emotional meaning must always be shown through clear feelings or actions,
+  not implied through metaphor or symbolic language.
+- Only allow figurative emotional language if it is immediately obvious
+  to a child in that age group and does not require interpretation.
+- If unsure, always default to simple emotional words like "happy",
+  "scared", "nervous", "sad", or "proud" rather than figurative language.
+- Use simple repetition naturally throughout the story, especially for
+  comforting phrases, sounds, actions, emotional reassurances, or recurring
+  character behaviors. Repetition should create rhythm, familiarity, warmth,
+  and memorability without becoming excessive.
+- Show the value through character actions, emotions, and consequences,
+  instead of turning the story into a lecture or a moral explanation.
+- Avoid intense danger, cruelty, punishment, hopelessness, frightening
+  imagery, emotional harshness, and emotionally overwhelming situations.
+- Keep conflict emotionally gentle and age-appropriate. Even during
+  difficult moments, the story should continue to feel emotionally secure
+  and hopeful.
+- Do not add a title, heading, or any label. Begin directly with the first
   paragraph of the story.
 - After the conclusion paragraph, end with one final line beginning
-  "Tonight's little lesson:" that names the value in a single short sentence.
+  "Tonight's little lesson:" followed by one short, warm, gentle sentence
+  naming the value or emotional takeaway in a comforting, conversational
+  tone.
 
 STRICT CONTENT RULES (never break these)
 - Age-appropriate only. No violence, fighting, weapons, death, injury, blood,

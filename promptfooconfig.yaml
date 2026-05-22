@@ -1,40 +1,24 @@
 # yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
 
-# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+description: "Value Stories for Kids Eval"
 
-description: "My eval"
-
+# The prompt is a two-message chat: the system message holds the real
+# system_prompt.txt, the user message holds the story request.
 prompts:
-  - "Write a tweet about {{topic}}"
-  - "Write a concise, funny tweet about {{topic}}"
-  
+  - file://story_prompt.json
 
 providers:
-  - "openai:gpt-5-mini"
-  - "openai:gpt-5"
-  
+  - openai:gpt-4.1
+  - anthropic:messages:claude-haiku-4-5
+  - google:gemini-3-flash-preview
 
-tests:
-  - vars:
-      topic: bananas
+# defaultTest applies to every test case. Here it loads system_prompt.txt
+# from disk into the {{system_prompt}} variable, so every story is
+# generated with your real system prompt.
+defaultTest:
+  vars:
+    system_prompt: file://system_prompt.txt
 
-  - vars:
-      topic: avocado toast
-    assert:
-      # For more information on assertions, see https://promptfoo.dev/docs/configuration/expected-outputs
-
-      # Make sure output contains the word "avocado"
-      - type: icontains
-        value: avocado
-
-      # Prefer shorter outputs
-      - type: javascript
-        value: 1 / (output.length + 1)
-
-  - vars:
-      topic: new york city
-    assert:
-      # For more information on model-graded evals, see https://promptfoo.dev/docs/configuration/expected-outputs/model-graded
-      - type: llm-rubric
-        value: ensure that the output is funny
+# The test inputs (name, age, value for each child).
+tests: file://random_children_data.yaml
 

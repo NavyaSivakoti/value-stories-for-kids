@@ -1,0 +1,60 @@
+# Round one test cases. Each pairs one value with a name and an age.
+# Arranged by age so the coverage is easy to see: every value appears
+# once, the ages span the full range plus the out-of-range 0, and the
+# names mix scripts (Latin, Telugu, Hindi, Chinese) and an emoji.
+- vars:
+    name: "Sita"
+    age: '4'
+    value: courage
+- vars:
+    name: क्विन
+    age: '1'
+    value: kindness
+- vars:
+    name: Tilly
+    age: '2'
+    value: generosity
+- vars:
+    name: Mohan
+    age: '3'
+    value: patience
+- vars:
+    name: Theo
+    age: '5'
+    value: sharing
+- vars:
+    name: నవ్య
+    age: '6'
+    value: honesty
+- vars:
+    name: Moses
+    age: '7'
+    value: perseverance
+- vars:
+    name: Ram
+    age: '8'
+    value: focus
+- vars:
+    name: 李星
+    age: '9'
+    value: gratitude
+- vars:
+    name: Thor
+    age: '10'
+    value: self-control
+- vars:
+    name: Bram Buttonboots
+    age: '11'
+    value: forgiveness
+- vars:
+    name: Nia 🚀
+    age: '12'
+    value: empathy
+- vars:
+    name: Nico Stardust
+    age: '13'
+    value: humility
+- vars:
+    name: "Ava O'Neil"
+    age: '14'
+    value: courage

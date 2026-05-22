@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "{{system_prompt}}"
+  },
+  {
+    "role": "user",
+    "content": "Please write a story that helps the child take in the value of {{value}}. The child is {{age}} years old. The child's first name is {{name}}, so make {{name}} the hero of the story."
+  }
+]
