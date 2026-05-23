@@ -53,6 +53,14 @@ The app can run on any one of three providers: Google Gemini, OpenAI, or Anthrop
 
    Open `.env`, add at least one provider API key, and set `VALUE_STORIES_PROVIDER` to that provider.
 
+   Also set `FLASK_SECRET_KEY` to a long random string. It is not something you get from a provider, you generate it yourself. You can create one with:
+
+   ```bash
+   python3 -c "import secrets; print(secrets.token_hex(32))"
+   ```
+
+   Copy the printed value into `.env` as `FLASK_SECRET_KEY`.
+
 5. Start the app:
 
    ```bash
@@ -74,27 +82,32 @@ The real `.env` file is never committed. It is listed in `.gitignore`.
 ## Project structure
 
 ```
-app.py                Flask routes and the request flow
-config.py             Loads all settings from the environment
-validation.py         Input validation for age, value, and name
-generator.py          Ties validation, the prompt, and the model together
-llm_client.py         Multi-provider model client over REST
-system_prompt.txt     The system prompt that shapes every story
-templates/            The HTML page
-static/               Styles
-promptfooconfig.yaml  PromptFoo evaluation config
-requirements.txt      Python dependencies
-.env.example          Template for the environment settings
+app.py                     Flask routes and the request flow
+config.py                  Loads all settings from the environment
+validation.py              Input validation for age, value, and name
+generator.py               Ties validation, the prompt, and the model together
+llm_client.py              Multi-provider model client over REST
+system_prompt.txt          The system prompt that shapes every story
+templates/                 The HTML page
+static/                    Styles
+promptfooconfig.yaml        PromptFoo evaluation config and assertions
+story_prompt.json          The chat-format prompt used by the evaluation
+random_children_data.yaml  The test inputs (name, age, value) for the evaluation
+EVAL_FINDINGS.md           A running log of issues found through evaluation
+requirements.txt           Python dependencies
+.env.example               Template for the environment settings
 ```
 
 ## Testing and evaluation
 
-Quality is a deliberate focus of this project, and the testing work is being built in stages:
+Quality is a deliberate focus of this project. The testing work is being built in stages:
 
-- Unit tests with pytest for the input validation logic
-- Prompt evaluation with PromptFoo, checking each story against rules and running across all three providers
-- Red teaming for prompt injection, leakage, and unsafe content
-- A CI pipeline to run the checks automatically
+- Prompt evaluation with PromptFoo: In progress. `promptfooconfig.yaml` runs every story through a suite of checks across all three providers. The checks mix deterministic rules (word count, the child's name, the closing lesson line) with model-graded rubrics for tone, age-fit, safety, and whether the value comes through.
+- Unit tests with pytest for the input validation logic: Planned
+- Red teaming for prompt injection, leakage, and unsafe content: Planned
+- A CI pipeline to run the checks automatically: Planned
+
+The evaluation inputs live in `random_children_data.yaml` and the chat prompt in `story_prompt.json`. Issues found through evaluation are recorded in `EVAL_FINDINGS.md`, so anyone reading the repo can see what the evals caught and what still needs fixing.
 
 To run the prompt evaluation:
 
@@ -103,8 +116,8 @@ promptfoo eval
 promptfoo view
 ```
 
-This section will be updated as each part is completed.
+Add `-o report.html` to the eval command to save a standalone HTML report.
 
 ## Status
 
-The app is built and working. The testing, evaluation, and deployment work is in progress.
+The app is built and working. The PromptFoo evaluation suite, unit tests, red teaming, the CI pipeline, and deployment are still in progress.
